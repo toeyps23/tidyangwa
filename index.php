@@ -821,7 +821,7 @@ $jsonStart = '{
 
       $jsonChoose = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/report.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/report.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -931,16 +931,16 @@ $decodejsonDetailcovid1 = jsonFormatDecode($jsonDetailcovid1);
 
 $jsonDetailcovid2 = '{
   "type": "image",
-  "originalContentUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/symptom.jpg?_ignored=",
-  "previewImageUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/symptom.jpg?_ignored=",
+  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/blob/master/symptom.jpg?_ignored=",
+  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/blob/master/symptom.jpg?_ignored=",
   "animated": false
 }';
 $decodejsonDetailcovid2 = jsonFormatDecode($jsonDetailcovid2);
 
 $jsonDetailcovid3 = '{
   "type": "image",
-  "originalContentUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/protect.jpg?_ignored=",
-  "previewImageUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/protect.jpg?_ignored=",
+  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/blob/master/protect.jpg?_ignored=",
+  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/blob/master/protect.jpg?_ignored=",
   "animated": false
 }';
 $decodejsonDetailcovid3 = jsonFormatDecode($jsonDetailcovid3);
@@ -957,7 +957,7 @@ $messages['messages'][0] = $decodeJsonStart;
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNorth = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/North.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/North.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1061,7 +1061,7 @@ $jsonflexNorth = '{
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNortheast = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/Northeast.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Northeast.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1265,7 +1265,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexCentralregion = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/Center.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Center.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1499,7 +1499,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
   $jsonflexEast = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/East.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/East.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1584,7 +1584,7 @@ $jsonflexNortheast = '{
 
   $jsonflexWest = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/West.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/West.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1648,7 +1648,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexSouth = '{
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/South.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/South.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1802,7 +1802,7 @@ $jsonflexNortheast = '{
 $jsonflexProvince = '
 {
   "type": "imagemap",
-  "baseUrl": "https://phptraining.amn-corporation.com/ku-src/RabbitProject/Province/Province.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Province.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
