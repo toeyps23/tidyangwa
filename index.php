@@ -1,80 +1,3 @@
-<<<<<<< HEAD
-<?php 
-	/*Get Data From POST Http Request*/
-	$datas = file_get_contents('php://input');
-	/*Decode Json From LINE Data Body*/
-	$deCode = json_decode($datas,true);
-
-	file_put_contents('log.txt', file_get_contents('php://input') . PHP_EOL, FILE_APPEND);
-
-	$replyToken = $deCode['events'][0]['replyToken'];
-	$userId = $deCode['events'][0]['source']['userId'];
-	$text = $deCode['events'][0]['message']['text'];
-
-	$messages = [];
-	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = getFormatTextMessage("เอ้ย ถามอะไรก็ตอบได้");
-
-	$encodeJson = json_encode($messages);
-
-	$LINEDatas['url'] = "https://api.line.me/v2/bot/message/reply";
-  	$LINEDatas['token'] = "zBbSW/cJy2BOX0clUvk3E91A7uV1h6RN1YjYNvNZLR0ntovKjQZvKo7Ctb/3YbUMRXCX1/ynDfmCGuJoIMgYOflHlbVeOE3i6D2tuNQyB44vP+UkihIrz8fFvQEiXqnq76FsOlw7gLmHotKjy4GBgAdB04t89/1O/w1cDnyilFU=";
-
-  	$results = sentMessage($encodeJson,$LINEDatas);
-
-	/*Return HTTP Request 200*/
-	http_response_code(200);
-
-	function getFormatTextMessage($text)
-	{
-		$datas = [];
-		$datas['type'] = 'text';
-		$datas['text'] = $text;
-
-		return $datas;
-	}
-
-	function sentMessage($encodeJson,$datas)
-	{
-		$datasReturn = [];
-		$curl = curl_init();
-		curl_setopt_array($curl, array(
-		  CURLOPT_URL => $datas['url'],
-		  CURLOPT_RETURNTRANSFER => true,
-		  CURLOPT_ENCODING => "",
-		  CURLOPT_MAXREDIRS => 10,
-		  CURLOPT_TIMEOUT => 30,
-		  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-		  CURLOPT_CUSTOMREQUEST => "POST",
-		  CURLOPT_POSTFIELDS => $encodeJson,
-		  CURLOPT_HTTPHEADER => array(
-		    "authorization: Bearer ".$datas['token'],
-		    "cache-control: no-cache",
-		    "content-type: application/json; charset=UTF-8",
-		  ),
-		));
-
-		$response = curl_exec($curl);
-		$err = curl_error($curl);
-
-		curl_close($curl);
-
-		if ($err) {
-		    $datasReturn['result'] = 'E';
-		    $datasReturn['message'] = $err;
-		} else {
-		    if($response == "{}"){
-			$datasReturn['result'] = 'S';
-			$datasReturn['message'] = 'Success';
-		    }else{
-			$datasReturn['result'] = 'E';
-			$datasReturn['message'] = $response;
-		    }
-		}
-
-		return $datasReturn;
-	}
-=======
 <?php
 
 define('LINE_API',"https://notify-api.line.me/api/notify");
@@ -898,7 +821,7 @@ $jsonStart = '{
 
       $jsonChoose = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/report.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/report.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1008,16 +931,16 @@ $decodejsonDetailcovid1 = jsonFormatDecode($jsonDetailcovid1);
 
 $jsonDetailcovid2 = '{
   "type": "image",
-  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/blob/master/symptom.jpg?_ignored=",
-  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/blob/master/symptom.jpg?_ignored=",
+  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/symptom.jpg?_ignored=",
+  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/symptom.jpg?_ignored=",
   "animated": false
 }';
 $decodejsonDetailcovid2 = jsonFormatDecode($jsonDetailcovid2);
 
 $jsonDetailcovid3 = '{
   "type": "image",
-  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/blob/master/protect.jpg?_ignored=",
-  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/blob/master/protect.jpg?_ignored=",
+  "originalContentUrl": "https://github.com/toeyps23/tidyangwa/protect.jpg?_ignored=",
+  "previewImageUrl": "https://github.com/toeyps23/tidyangwa/protect.jpg?_ignored=",
   "animated": false
 }';
 $decodejsonDetailcovid3 = jsonFormatDecode($jsonDetailcovid3);
@@ -1034,7 +957,7 @@ $messages['messages'][0] = $decodeJsonStart;
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNorth = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/North.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/North.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1138,7 +1061,7 @@ $jsonflexNorth = '{
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNortheast = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Northeast.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Northeast.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1342,7 +1265,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexCentralregion = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Center.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Center.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1576,7 +1499,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
   $jsonflexEast = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/East.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/East.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1661,7 +1584,7 @@ $jsonflexNortheast = '{
 
   $jsonflexWest = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/West.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/West.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1725,7 +1648,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexSouth = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/South.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/South.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1879,7 +1802,7 @@ $jsonflexNortheast = '{
 $jsonflexProvince = '
 {
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Province.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Province.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -2960,5 +2883,4 @@ function insertData($spreadsheetId,$service,$userId,$displayName,$words,$display
         }
         return $datasReturn;
   }
->>>>>>> b61c5090e3b98a3dfe62ccbb538cbd3233d750be
 ?>
