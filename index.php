@@ -957,7 +957,7 @@ $messages['messages'][0] = $decodeJsonStart;
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNorth = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/North.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/North.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1061,7 +1061,7 @@ $jsonflexNorth = '{
 // --------------------------------------------------------------------------------------------------------------
 $jsonflexNortheast = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Northeast.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Northeast.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1265,7 +1265,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexCentralregion = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Center.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Center.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1499,7 +1499,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
   $jsonflexEast = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/East.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/East.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1584,7 +1584,7 @@ $jsonflexNortheast = '{
 
   $jsonflexWest = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/West.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/West.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1648,7 +1648,7 @@ $jsonflexNortheast = '{
 // --------------------------------------------------------------------------------------------------------------
     $jsonflexSouth = '{
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/South.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/South.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
@@ -1802,7 +1802,7 @@ $jsonflexNortheast = '{
 $jsonflexProvince = '
 {
   "type": "imagemap",
-  "baseUrl": "https://github.com/toeyps23/tidyangwa/Province/Province.jpg?_ignored=",
+  "baseUrl": "https://github.com/toeyps23/tidyangwa/blob/master/Province/Province.jpg?_ignored=",
   "altText": "This is an imagemap",
   "baseSize": {
     "width": 1040,
